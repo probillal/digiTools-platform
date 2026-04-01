@@ -2,6 +2,10 @@ import React from "react";
 import { MdDeleteOutline } from "react-icons/md";
 
 const Cart = ({ cart, carts, setCarts }) => {
+  const handleDeleteItem = () => {
+    const filterCart = carts.filter((item) => item.id !== cart.id);
+    setCarts(filterCart);
+  };
   return (
     <div className="mt-5">
       <div className="flex justify-between items-center gap-4 border p-4 rounded-3xl mt-8">
@@ -16,7 +20,12 @@ const Cart = ({ cart, carts, setCarts }) => {
             <p className="font-semibold">$ {cart.price} /month</p>
           </div>
         </div>
-        <button className="btn text-red-500 text-2xl ">Remove</button>
+        <button
+          onClick={handleDeleteItem}
+          className="btn text-red-500 text-2xl "
+        >
+          Remove
+        </button>
       </div>
     </div>
   );
