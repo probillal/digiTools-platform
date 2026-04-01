@@ -1,4 +1,4 @@
-Name of your Project: DigiTools Platform
+Name of Project: DigiTools Platform
 
 Description:
 DigiTools Platform is a user-friendly web application designed to provide multiple useful tools in a single interface. It focuses on improving efficiency, reducing repetitive work, and helping developers and users perform tasks quickly and smoothly.
