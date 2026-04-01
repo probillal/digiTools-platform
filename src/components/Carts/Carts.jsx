@@ -3,6 +3,9 @@ import Cart from "../Cart/Cart";
 
 const Carts = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0);
+  const paymentMethod = () => {
+    setCarts([]);
+  };
   return (
     <div className="max-w-96 lg:container mx-auto mb-10">
       <h2 className="text-2xl font-bold">Your Cart Items</h2>
@@ -21,7 +24,10 @@ const Carts = ({ carts, setCarts }) => {
 
         <h2 className="text-2xl font-bold">$ {totalPrice}</h2>
       </div>
-      <button className="btn w-full mt-5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-2xl text-white rounded-2xl py-8">
+      <button
+        onClick={paymentMethod}
+        className="btn w-full mt-5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-2xl text-white rounded-2xl py-8"
+      >
         Proceed to checkout
       </button>
     </div>
