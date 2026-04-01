@@ -22,7 +22,7 @@ const Banner = () => {
             <span className="text-black">Digital Workflow</span>
           </h1>
 
-          <p className="text-lg text-zinc-600 max-w-lg">
+          <p className="text-md text-zinc-600 max-w-lg">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today. Explore
             Products
