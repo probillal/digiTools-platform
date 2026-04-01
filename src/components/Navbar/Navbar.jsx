@@ -44,7 +44,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <h2 className="text-2xl">DigiTools</h2>
+        <h2 className="text-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+          DigiTools
+        </h2>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

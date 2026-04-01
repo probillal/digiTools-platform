@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for beginners getting started",
+    "price": 10,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["10+ templates", "Basic support", "Export to PDF"],
+    "icon": "📦"
+  },
+  {
+    "id": 2,
+    "name": "Basic Plan",
+    "description": "Great for individuals",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["50+ templates", "ATS optimization", "Email support"],
+    "icon": "🚀"
+  },
+  {
+    "id": 3,
+    "name": "Pro Plan",
+    "description": "Best for professionals",
+    "price": 39,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["100+ templates", "Advanced analytics", "Priority support"],
+    "icon": "💼"
+  },
+  {
+    "id": 4,
+    "name": "Enterprise Plan",
+    "description": "For large teams and businesses",
+    "price": 99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited templates",
+      "Team collaboration",
+      "Dedicated manager"
+    ],
+    "icon": "🏢"
+  },
+  {
+    "id": 5,
+    "name": "Lifetime Access",
+    "description": "One-time payment for lifetime use",
+    "price": 199,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "All features included",
+      "Lifetime updates",
+      "Premium support"
+    ],
+    "icon": "💎"
+  },
+  {
+    "id": 6,
+    "name": "Student Plan",
+    "description": "Affordable plan for students",
+    "price": 5,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["20+ templates", "Basic ATS", "Community support"],
+    "icon": "🎓"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Plan",
+    "description": "Designed for freelancers",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["60+ templates", "Client export", "Priority email support"],
+    "icon": "🧑‍💻"
+  },
+  {
+    "id": 8,
+    "name": "Yearly Pro",
+    "description": "Save more with yearly billing",
+    "price": 299,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["All pro features", "Discounted price", "Priority support"],
+    "icon": "📅"
+  },
+  {
+    "id": 9,
+    "name": "Team Plan",
+    "description": "Perfect for small teams",
+    "price": 59,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Team access", "Shared templates", "Collaboration tools"],
+    "icon": "👥"
+  },
+  {
+    "id": 10,
+    "name": "Ultimate Plan",
+    "description": "All-in-one premium package",
+    "price": 499,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["Unlimited everything", "AI tools", "24/7 support"],
+    "icon": "🔥"
+  }
+]

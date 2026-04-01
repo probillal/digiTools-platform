@@ -7,7 +7,13 @@ import Steps from "./components/StepsSection/Steps";
 import PricingSection from "./components/PricingSection/PricingSection";
 import WorkFlowSection from "./components/WorkFlowSection/WorkFlowSection";
 import Footer from "./components/Footer/Footer";
+import PricingOption from "./components/PricingOption/PricingOption";
+const fetchPricing = async () => {
+  const res = await fetch("/pricingCardData.json");
+  return res.json();
+};
 
+const pricingPromise = fetchPricing();
 function App() {
   return (
     <>
@@ -16,6 +22,7 @@ function App() {
         <Banner></Banner>
         <Stats></Stats>
         <Heading></Heading>
+        <PricingOption pricingPromise={pricingPromise}></PricingOption>
         <Steps></Steps>
         <PricingSection></PricingSection>
         <WorkFlowSection></WorkFlowSection>
