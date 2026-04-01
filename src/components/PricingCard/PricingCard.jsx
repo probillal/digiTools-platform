@@ -44,7 +44,7 @@ const PricingCard = ({ card, carts, setCarts }) => {
               onClick={() => handleSubscribe()}
               className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-2xl btn-block "
             >
-              {isSubscribe ? "Subscribe" : "Subscribe Now"}
+              {isSubscribe ? "Added to Cart" : "Subscribe Now"}
             </button>
           </div>
         </div>
