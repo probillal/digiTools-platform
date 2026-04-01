@@ -5,6 +5,7 @@ import Heading from "./components/Heading/Heading";
 import Stats from "./components/Stats/Stats";
 import Steps from "./components/StepsSection/Steps";
 import PricingSection from "./components/PricingSection/PricingSection";
+import WorkFlowSection from "./components/WorkFlowSection/WorkFlowSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Heading></Heading>
         <Steps></Steps>
         <PricingSection></PricingSection>
+        <WorkFlowSection></WorkFlowSection>
       </div>
     </>
   );
