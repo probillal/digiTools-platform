@@ -1,13 +1,15 @@
 import React from "react";
 import Cart from "../Cart/Cart";
+import { toast } from "react-toastify";
 
 const Carts = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0);
   const paymentMethod = () => {
     setCarts([]);
+    toast.success("Payment successful!");
   };
   return (
-    <div className="max-w-96 lg:container mx-auto mb-10">
+    <div className="max-w-96 lg:container mx-auto mb-10 px-10">
       <h2 className="text-2xl font-bold">Your Cart Items</h2>
       {carts.length === 0 ? (
         <h2 className="text-3xl text-center font-bold my-10 lg:my-20">

@@ -52,7 +52,6 @@ function App() {
         ) : (
           <Carts carts={carts} setCarts={setCarts}></Carts>
         )}
-
         <Steps></Steps>
         <PricingSection></PricingSection>
         <WorkFlowSection></WorkFlowSection>

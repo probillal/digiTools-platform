@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import Feature from "../Feature/Feature";
+import { toast } from "react-toastify";
 
 const PricingCard = ({ card, carts, setCarts }) => {
-  console.log(card);
+  //   console.log(card);
   const { icon, tagType, price, name, description, period, features } = card;
   const [isSubscribe, setIsSubscribe] = useState(false);
   const handleSubscribe = () => {
+    const isFound = carts.find((item) => item.id === card.id);
+    if (isFound) {
+      toast.error("Item already in cart!");
+      return;
+    }
     setIsSubscribe(true);
+    toast.success("Item added successfully!");
     setCarts([...carts, card]);
   };
   return (
     <div className="my-6">
-      {/* card-1 */}
       <div className="card w-full h-full bg-base-100 shadow-sm ">
         <div className="card-body">
           <div className="flex justify-between items-center w-full">
