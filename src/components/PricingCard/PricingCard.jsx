@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Feature from "../Feature/Feature";
 
-const PricingCard = ({ card }) => {
+const PricingCard = ({ card, carts, setCarts }) => {
   console.log(card);
   const { icon, tagType, price, name, description, period, features } = card;
   const [isSubscribe, setIsSubscribe] = useState(false);
   const handleSubscribe = () => {
     setIsSubscribe(true);
+    setCarts([...carts, card]);
   };
   return (
     <div className="my-6">

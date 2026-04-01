@@ -31,7 +31,7 @@ function App() {
             type="radio"
             name="my_tabs_1"
             className={`tab rounded-full w-40 ${activeTab === "product" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""}`}
-            aria-label="Models"
+            aria-label="Products"
             onClick={() => setActiveTab("product")}
             defaultChecked
           />
@@ -43,7 +43,11 @@ function App() {
             onClick={() => setActiveTab("cart")}
           />
         </div>
-        <PricingOption pricingPromise={pricingPromise}></PricingOption>
+        <PricingOption
+          carts={carts}
+          setCarts={setCarts}
+          pricingPromise={pricingPromise}
+        ></PricingOption>
         <Carts carts={carts} setCarts={setCarts}></Carts>
         <Steps></Steps>
         <PricingSection></PricingSection>
