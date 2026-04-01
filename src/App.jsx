@@ -6,6 +6,7 @@ import Stats from "./components/Stats/Stats";
 import Steps from "./components/StepsSection/Steps";
 import PricingSection from "./components/PricingSection/PricingSection";
 import WorkFlowSection from "./components/WorkFlowSection/WorkFlowSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Steps></Steps>
         <PricingSection></PricingSection>
         <WorkFlowSection></WorkFlowSection>
+        <Footer></Footer>
       </div>
     </>
   );
