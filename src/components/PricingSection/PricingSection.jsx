@@ -11,7 +11,7 @@ const PricingSection = () => {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center px-10">
         {/* card-1 */}
-        <div className="card w-80 bg-base-100 shadow-sm">
+        <div className="card w-full h-full bg-base-100 shadow-sm">
           <div className="card-body">
             <div>
               <h2 className="text-3xl font-bold">Starter</h2>
