@@ -1,5 +1,7 @@
 import React from "react";
 import userImage from "../../assets/user.png";
+import productImage from "../../assets/package.png";
+import rocketImage from "../../assets/rocket.png";
 
 const Steps = () => {
   return (
@@ -27,7 +29,7 @@ const Steps = () => {
         {/* card-2 */}
         <div className="relative bg-white rounded-lg text-center p-4 space-y-3">
           <div className="bg-linear-to-r from-[#e5e3f3] to-[#e7d7f3] w-16 h-16 rounded-full flex justify-center items-center mx-auto">
-            <img className="w-10" src={userImage} alt="User Image" />
+            <img className="w-10" src={productImage} alt="Product Image" />
           </div>
           <h2 className="text-xl font-bold">Choose Products</h2>
           <p className="text-xs w-60 mx-auto">
@@ -40,7 +42,7 @@ const Steps = () => {
         {/* card-3 */}
         <div className="relative bg-white rounded-lg text-center p-4 space-y-3">
           <div className="bg-linear-to-r from-[#e5e3f3] to-[#e7d7f3] w-16 h-16 rounded-full flex justify-center items-center mx-auto">
-            <img className="w-10" src={userImage} alt="User Image" />
+            <img className="w-10" src={rocketImage} alt="Rocket Image" />
           </div>
           <h2 className="text-xl font-bold">Start Creating</h2>
           <p className="text-xs w-60 mx-auto">
