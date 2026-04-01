@@ -9,27 +9,32 @@ const Carts = ({ carts, setCarts }) => {
   return (
     <div className="max-w-96 lg:container mx-auto mb-10">
       <h2 className="text-2xl font-bold">Your Cart Items</h2>
+      {carts.length === 0 ? (
+        <h2 className="text-3xl text-center font-bold my-10 lg:my-20">
+          Cart is Empty
+        </h2>
+      ) : (
+        <>
+          {carts.map((cart) => (
+            <Cart cart={cart} carts={carts} setCarts={setCarts}></Cart>
+          ))}
+          <div className="flex justify-between items-center gap-4 border p-5 rounded-3xl mt-8">
+            <div>
+              <h2 className="text-2xl font-bold flex gap-2 items-center">
+                Total
+              </h2>
+            </div>
 
-      <h2 className="text-3xl text-center font-bold my-10 lg:my-20">
-        Cart is Empty
-      </h2>
-
-      {carts.map((cart) => (
-        <Cart cart={cart} carts={carts} setCarts={setCarts}></Cart>
-      ))}
-      <div className="flex justify-between items-center gap-4 border p-5 rounded-3xl mt-8">
-        <div>
-          <h2 className="text-2xl font-bold flex gap-2 items-center">Total</h2>
-        </div>
-
-        <h2 className="text-2xl font-bold">$ {totalPrice}</h2>
-      </div>
-      <button
-        onClick={paymentMethod}
-        className="btn w-full mt-5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-2xl text-white rounded-2xl py-8"
-      >
-        Proceed to checkout
-      </button>
+            <h2 className="text-2xl font-bold">$ {totalPrice}</h2>
+          </div>
+          <button
+            onClick={paymentMethod}
+            className="btn w-full mt-5 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-2xl text-white rounded-2xl py-8"
+          >
+            Proceed to checkout
+          </button>
+        </>
+      )}
     </div>
   );
 };

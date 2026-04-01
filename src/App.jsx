@@ -43,12 +43,16 @@ function App() {
             onClick={() => setActiveTab("cart")}
           />
         </div>
-        <PricingOption
-          carts={carts}
-          setCarts={setCarts}
-          pricingPromise={pricingPromise}
-        ></PricingOption>
-        <Carts carts={carts} setCarts={setCarts}></Carts>
+        {activeTab === "product" ? (
+          <PricingOption
+            carts={carts}
+            setCarts={setCarts}
+            pricingPromise={pricingPromise}
+          ></PricingOption>
+        ) : (
+          <Carts carts={carts} setCarts={setCarts}></Carts>
+        )}
+
         <Steps></Steps>
         <PricingSection></PricingSection>
         <WorkFlowSection></WorkFlowSection>

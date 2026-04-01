@@ -2,7 +2,7 @@ import React from "react";
 import { MdDeleteOutline } from "react-icons/md";
 
 const Cart = ({ cart, carts, setCarts }) => {
-  const handleDeleteItem = () => {
+  const handleDeleteItem = (cart) => {
     const filterCart = carts.filter((item) => item.id !== cart.id);
     setCarts(filterCart);
   };
@@ -21,7 +21,7 @@ const Cart = ({ cart, carts, setCarts }) => {
           </div>
         </div>
         <button
-          onClick={handleDeleteItem}
+          onClick={() => handleDeleteItem(cart)}
           className="btn text-red-500 text-2xl "
         >
           Remove
